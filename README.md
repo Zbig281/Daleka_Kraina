@@ -1,2 +1,2 @@
 # Daleka_Kraina
-Private Mod for Daleka Kraina Server.
+Private Mod for Daleka Kraina Server created by Zbig Brodaty
