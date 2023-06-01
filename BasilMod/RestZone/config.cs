@@ -40,4 +40,4 @@ Available function from the server console:
 
 $BasilMod::restzone::enable = true; //Enable on server startup
 
-BasilMod::restzone_register("-915 1239 1007", 3, "<color:00ff00>Rest zone<color:ff0000>\r\nStand still, while we fixing you!", true, true, true); //Register new rest zone
+BasilMod::restzone_register("-915 1239 1007", 5, "<color:00ff00>Rest zone<color:ff0000>\r\nStand still, while we fixing you!", true, true, true); //Register new rest zone
