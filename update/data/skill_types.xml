@@ -42,7 +42,7 @@
 		<skill_mult>1</skill_mult>
 		<abilities>
 			<ability lvl="0" name="to Lower Ground Level" id="7" type="Use Shovel" priority="10.1">
-				<duration const="">3</duration>
+				<duration const="">5</duration>
 				<ability_skill_mult>100</ability_skill_mult>
 				<entities>
 					<entity type="cell">
@@ -67,7 +67,7 @@
 				<autorepeat>possible</autorepeat>
 			</ability>
 			<ability lvl="0" name="Pour on the Ground" id="8">
-				<duration const="">2</duration>
+				<duration const="">5</duration>
 				<ability_skill_mult>20</ability_skill_mult>
 				<entities>
 					<entity type="inventory_item">
@@ -90,7 +90,7 @@
 				<autorepeat>possible</autorepeat>
 			</ability>
 			<ability lvl="30" name="to Flat Ground" id="9" type="Use Shovel" priority="11.3">
-				<duration const="">3</duration>
+				<duration const="">5</duration>
 				<ability_skill_mult>200</ability_skill_mult>
 				<entities>
 					<entity type="cell">
@@ -116,7 +116,7 @@
 				<autorepeat>possible</autorepeat>
 			</ability>
 			<ability lvl="30" name="to Flat Upward Slope" type="Use Shovel" id="10" priority="11.2">
-				<duration const="">3</duration>
+				<duration const="">5</duration>
 				<ability_skill_mult>300</ability_skill_mult>
 				<entities>
 					<entity type="cell">
@@ -142,7 +142,7 @@
 				<autorepeat>possible</autorepeat>
 			</ability>
 			<ability lvl="30" name="to Flat Downward Slope" type="Use Shovel" id="11" priority="11.1">
-				<duration const="">3</duration>
+				<duration const="">5</duration>
 				<ability_skill_mult>300</ability_skill_mult>
 				<entities>
 					<entity type="cell">
