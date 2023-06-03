@@ -48,5 +48,5 @@ else
    exec("BasilMod/chats/chats.cs");
    exec("BasilMod/RestZone/RestZone.cs");
    exec("ServerRestart/Restart.cs");
-   exec("mod/JorvikMod/scripts/server.cs");
+   exec("mod/JorvikMod/scripts/server.cs"); //regulamin do edycji
 }
