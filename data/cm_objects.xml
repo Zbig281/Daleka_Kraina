@@ -28746,7 +28746,7 @@
             </state>
         </states>
     </object>
-    <object id="2467" isUnflattenAllowed="1" rotationStep="1" defaultState="Complete" StreamingGroup="1" noRuins="1">
+    <object id="3017" isUnflattenAllowed="1" rotationStep="1" defaultState="Complete" StreamingGroup="1" noRuins="1">
         <!--name = Siege Tower-->
         <lockedCells>
             <cell x="0" y="0" />
