@@ -101,4 +101,13 @@ datablock AttachedShapeData(HarnessedHorseWoodCart)
 	
 	shapeFile = "art/models/3d/mobiles/transportation/woodcart/woodhorsecart.dts";
 };
+datablock AttachedShapeData(HarnessedSiegeTower)
+{
+	id = 702;
+	objectTypeId = 3017;
+	
+	shapeFile = "mod/JorvikMod/art/models/3d/mobiles/transportation/woodcart/siegetower.dts";
+};
+
+
 //-------------------------------------------------------------------------------------
