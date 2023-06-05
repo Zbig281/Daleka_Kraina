@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<!-- WARNING -->
+<!-- DO NOT FORGET TO SYNCHRONIZE THIS FILE IN CM_SERVER AND CM_YO_SERVER PROJECTS -->
+
+<node name = "root" class = "Selector">
+	<node class = "Sequence">
+		<node name = "HpLessCheck" class = "HpLessCheck" value = "0" />
+		<node name = "DeathProcess" class = "DynSelector" >
+			<node name = "Death" class = "Death" />
+		</node>
+	</node>
+	<node name = "Threatened" class = "Sequence">
+		<node name = "BecomeAlerted" class = "ThreatValueGreater" value = "200" /> <!-- BASE: become_alerted_threshold_on -->
+		<node name = "ThreatenedProcess" class = "Failurator" > <!-- Negate the result here because we need to update threat levels while threatened and rise up animation -->
+			<node name = "RiseOrThreaten" class = "Selector" >
+				<node name = "NeedToRiseUp" class = "Sequence" >
+					<node name = "IsLaying" class = "IsLaying" />
+					<node name = "RiseUp" class = "RiseUp" />
+				</node>
+				<node name = "AlertedSelect" class = "Selector" >
+					<node name = "SwitchToAggressive" class = "Sequence" >
+						<node name = "BecomeAggressive" class = "ThreatValueGreater" value = "300" /> <!-- BASE: become_aggressive_threshold_on -->
+						<node name = "Aggression" class = "Selector" >
+							<node name = "ChooseAggression" class = "Sequence" >
+								<node name = "HpLessCheck" class = "HpLessCheck" value = "10" /> <!-- 10% everywhere -->
+								<node name = "AttackAction" class = "Sequence" >
+									<node name = "ThreatenedProcess" class = "DynSelector" >
+										<node name = "Roar" class = "Roar" />
+									</node>
+									<node name = "SelectChaseOrAttack" class = "Selector" >
+										<node name = "IsAttackPossibleSeq" class = "Sequence">
+											<node name = "IsEnemyInAttackSector" class = "EnemyInAttackSector" value = "4 60" /> <!-- BASE: creature_body_radius + fast_hit_starting_distance, fast_hit_damaging_sector-->
+											<node name = "AttackProcess" class = "DynSelector" >
+												<node name = "ChaseEnemyNoAnimation" class = "ChaseEnemyNoAnimation" />
+												<node name = "AttackSelection" class = "RndSelector" value = "60 40" > <!-- BASE: power_attack_probability = 0.4 translate to "60 40" -->
+													<node name = "FastAttack" class = "Attack" value = "Fast" />
+													<node name = "PowerAttack" class = "Attack" value = "Power" />
+												</node>
+											</node>
+										</node>
+										<node name = "ChaseProcess" class = "DynSelector" >
+											<node name = "ThreatChangeSequence" class = "Sequence" >
+												<node name = "Successor" class = "Successor" >
+													<node name = "ThreatChangeSelect" class = "Selector" >
+														<node name = "ThreatReduce" class = "Sequence" >
+															<node name = "Inverter" class = "Inverter" >
+																<node name = "EnemyInAlertnessRange" class = "EnemyInRange" value = "30 60" /> <!-- BASE: alertness_range_min, alertness_range_max -->
+															</node>
+															<node name = "ThreatValueChangeNotAlert" class = "ThreatValueChange" value = "-20 15" /> <!-- TODO: FIND THIS IN CODE, NOT FROM BASE, Leave -20 for now -->
+														</node>
+														<node name = "ThreatReduce" class = "Sequence" >
+															<node name = "Inverter" class = "Inverter" >
+																<node name = "EnemyInAggressionRange" class = "EnemyInRange" value = "15 30" /> <!-- BASE: aggression_range_min, aggression_range_max -->
+															</node>
+															<node name = "ThreatValueChangeNotAggression" class = "ThreatValueChange" value = "-10 30" /> <!-- TODO: FIND THIS IN CODE, NOT FROM BASE, Leave -10 for now -->
+														</node>
+													</node>
+												</node>
+												<node name = "Inverter" class = "Inverter" >
+													<node name = "BecomePassive" class = "ThreatValueGreater" value = "0" /> <!-- BASE: become_aggressive_threshold_off -->
+												</node>
+											</node>
+											<node name = "HpLessCheck" class = "HpLessCheck" value = "10" /> <!-- 10% everywhere -->
+											<node name = "IsFrightened" class = "IsFrightened" /> <!-- animal is frightened when received siege damage -->
+											<node name = "IsEnemyInAttackSector" class = "EnemyInAttackSector" value = "4 60" /> <!-- BASE: creature_body_radius + fast_hit_starting_distance, fast_hit_damaging_sector-->
+											<node name = "EnemyOutOfReach" class = "EnemyOutOfReach" />
+											<node name = "ChaseEnemy" class = "ChaseEnemy" />
+										</node>
+									</node>
+								</node>
+							</node>
+							<node name = "FleeAction" class = "Sequence" >
+								<node name = "FleeProcess" class = "DynSelector" >
+									<node name = "HpLessCheck" class = "HpLessCheck" value = "10" /> <!-- 10% everywhere -->
+									<node name = "Inverter" class = "Inverter" >
+										<node name = "EnemyInFleeRange" class = "EnemyInRange" value = "50 70" /> <!-- BASE: flee_order_distance_min, flee_order_distance_max -->
+									</node>
+									<node name = "Flee" class = "Flee" value = "100" />
+								</node>
+							</node>
+						</node>
+					</node>
+					<node name = "Threat" class = "Threat" />
+				</node>
+			</node>
+		</node>
+	</node>
+	<node name = "ThreatValueManager" class = "Selector" >
+		<node name = "Sequence" class = "Sequence">
+			<node name = "Damaged" class = "Damaged" value = "any 1" /> <!-- i.e. any type of damage -->
+			<node name = "ThreatValueFromDamage" class = "ThreatValueChange" value = "300" /> <!-- BASE: threat_from_damage_per_hit_point -->
+		</node>
+		<node name = "Sequence" class = "Sequence">
+			<node name = "EnemyInAggressionRange" class = "EnemyInRange" value = "15 30" /> <!-- BASE: aggression_range_min, aggression_range_max -->
+			<node name = "ThreatValueAggressionRange" class = "ThreatValueChange" value = "50 10" /> <!-- BASE: aggression_range_presence_threat_speed, alertness_range_presence_memory_duration -->
+		</node>
+		<node name = "Sequence" class = "Sequence">
+			<node name = "EnemyInAlertnessRange" class = "EnemyInRange" value = "30 60" /> <!-- BASE: alertness_range_min, alertness_range_max -->
+			<node name = "ThreatValueAlertnessRange" class = "ThreatValueChange" value = "30 10" /> <!-- BASE: alertness_range_presence_threat_speed, alertness_range_presence_memory_duration -->
+		</node>
+		<node name = "Failurator" class = "Failurator">
+			<node name = "ThreatReduceSequence" class = "Sequence" >
+				<node name = "Inverter" class = "Inverter" >
+					<node name = "BecomePassive" class = "ThreatValueGreater" value = "0" /> <!-- BASE: become_aggressive_threshold_off -->
+				</node>
+				<node name = "ClearEnemyInteractions" class = "ClearEnemyInteractions" />
+			</node>
+		</node>
+		<node name = "ThreatReduceSequence" class = "Sequence" >
+			<node name = "BecomePassive" class = "ThreatValueGreater" value = "0" /> <!-- BASE: become_aggressive_threshold_off -->
+			<node name = "ReduceAlert" class = "ThreatValueChange" value = "-20 15" /> <!-- TODO: FIND THIS IN CODE, NOT FROM BASE, Leave -20 for now -->
+		</node>
+	</node>
+	<node name = "IdleSequence" class = "Sequence" >
+		<node name = "IdleSeletion" class = "DynSelector">
+			<node name = "Damaged" class = "Damaged" value = "any" /> <!-- i.e. any type of damage -->
+			<node name = "EnemyInAlertnessRange" class = "EnemyInRange" value = "30 60" /> <!-- BASE: alertness_range_min, alertness_range_max -->
+			<node name = "SelectSleepOrOtherAction" class = "Selector" >
+				<node name = "SleepSequence" class = "Sequence" >
+					<node name = "IsLaying" class = "IsLaying" />
+					<node name = "Sleep" class = "Sleep" value = "10 20" /> <!-- sleep_duration_min, sleep_duration_max -->
+					<node name = "RiseUpProcess" class = "DynSelector" >
+						<node name = "RiseUp" class = "RiseUp" />
+					</node>
+				</node>
+				<node name = "IdleRndSelection" class = "RndSelector" value = "1 3 4 1 0" > <!-- BASE: sleep_probab, eat_probab, stand_probab, walk_probab, run_probab -->
+					<node name = "LayDown" class = "LayDown" value = "8" />
+					<node name = "Eat" class = "Eat" value = "8" /> <!-- BASE: non_sleep_action_duration_max -->
+					<node name = "Stand" class = "Stand" value = "8" /> <!-- BASE: non_sleep_action_duration_max -->
+					<node name = "Walk" class = "Walk" value = "15 40" /> <!-- BASE: traveling_distance_min, traveling_distance_max -->
+					<node name = "Run" class = "Run" value = "15 40" /> <!-- BASE: traveling_distance_min, traveling_distance_max -->
+				</node>
+			</node>
+		</node>
+	</node>
+</node>

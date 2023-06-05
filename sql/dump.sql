@@ -3173,7 +3173,7 @@ INSERT INTO `recipe` (`ID`, `Name`, `Description`, `StartingToolsID`, `SkillType
 (3007,'Tribe Mole Sack','',36,8,500,3007,0,1,0,0,''),
 (3009,'Tribe Witch Sack','',36,8,500,3009,0,1,0,0,''),
 (3010,'Wood Cart','',36,8,90,3016,30,1,0,0,'art\\2D\\Recipes\\horse_cart.png'),
-(3011,'Siege Tower','Object from Jorvik MOD',36,10,0,2467,30,1,0,0,'mod\\JorvikMod\\art\\2D\\Recipes\\siegetower.png');
+(3011,'Siege Tower','Object from Jorvik MOD',36,10,0,3017,30,1,0,0,'mod\\JorvikMod\\art\\2D\\Recipes\\siegetower.png');
 
 
 --
