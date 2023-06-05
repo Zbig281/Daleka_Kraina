@@ -47,5 +47,5 @@ else
    exec("Tradepost/init.cs");
    exec("BasilMod/chats/chats.cs");
    exec("BasilMod/RestZone/RestZone.cs");
-   exec("ServerRestart/Restart.cs");
+   exec("ServerRestart/Restart.cs");  
 }
