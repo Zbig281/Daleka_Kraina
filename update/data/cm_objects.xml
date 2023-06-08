@@ -28709,7 +28709,7 @@
         </states>
     </object>
     <object id="3016" isUnflattenAllowed="1" rotationStep="1" defaultState="Complete" StreamingGroup="1" noRuins="1">
-        <!--name = Horse cart-->
+        <!--name = wood cart-->
         <lockedCells>
             <cell x="0" y="0" />
         </lockedCells>
