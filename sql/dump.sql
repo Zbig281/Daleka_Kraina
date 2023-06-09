@@ -3169,8 +3169,7 @@ INSERT INTO `recipe` (`ID`, `Name`, `Description`, `StartingToolsID`, `SkillType
 (1144,'Wranen the Hunter (stand)','Object from Jorvik MOD',NULL,53,90,2462,50,1,0,0,'mod\\JorvikMod\\art\\2D\\Recipes\\wranen_the_hunter.png'),
 (1145,'test','',293,8,0,1130,10,10,1,0,'art\\2D\\Items\\planks.png'),
 (3010,'Wood Cart','',36,8,90,3016,30,1,0,0,'art\\2D\\Recipes\\horse_cart.png'),
-(3011,'Siege Tower','Object from Jorvik MOD',36,10,0,3017,30,1,0,0,'mod\\JorvikMod\\art\\2D\\Recipes\\siegetower.png'),
-(3012,'Wooden Church','Object from Jorvik MOD pack',32,20,60,3018,35,1,0,0,'mod\\JorvikMod\\art\\2D\\Recipes\\wooden_church.png');
+(3011,'Siege Tower','Object from Jorvik MOD',36,10,0,3017,30,1,0,0,'mod\\JorvikMod\\art\\2D\\Recipes\\siegetower.png');
 
 
 --
