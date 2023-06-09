@@ -819,11 +819,6 @@ datablock SFXProfile( horse_move_gallop_armoured) {
    description = HorseAudioLoop;
 };
 
-datablock SFXProfile( horse_move_gallop_armoured_tremble) {
-   id = 1019;
-   filename = "art/sound/horse/horse_move_gallop_armoured_tremble";
-   description = HorseAudioLoop;
-};
 datablock SFXProfile( horse_climbing) {
    id = 1022;
    filename = "art/sound/horse/horse_climbing_01";

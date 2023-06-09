@@ -31950,4 +31950,50 @@
 		<Quantity>6</Quantity>
 		<IsRegionItemRequired>0</IsRegionItemRequired>
 	</row>
+	<!-- Wooden Church-->
+	<row>
+		<ID>4438</ID>
+		<RecipeID>3012</RecipeID>
+		<MaterialObjectTypeID>233</MaterialObjectTypeID>
+		<Quality>0</Quality>
+		<Influence>30</Influence>
+		<Quantity>150</Quantity>
+		<IsRegionItemRequired>0</IsRegionItemRequired>
+	</row>
+	<row>
+		<ID>4439</ID>
+		<RecipeID>3012</RecipeID>
+		<MaterialObjectTypeID>268</MaterialObjectTypeID>
+		<Quality>0</Quality>
+		<Influence>10</Influence>
+		<Quantity>250</Quantity>
+		<IsRegionItemRequired>0</IsRegionItemRequired>
+	</row>
+	<row>
+		<ID>4440</ID>
+		<RecipeID>3012</RecipeID>
+		<MaterialObjectTypeID>286</MaterialObjectTypeID>
+		<Quality>0</Quality>
+		<Influence>10</Influence>
+		<Quantity>1</Quantity>
+		<IsRegionItemRequired>1</IsRegionItemRequired>
+	</row>
+	<row>
+		<ID>4441</ID>
+		<RecipeID>3012</RecipeID>
+		<MaterialObjectTypeID>288</MaterialObjectTypeID>
+		<Quality>0</Quality>
+		<Influence>5</Influence>
+		<Quantity>7</Quantity>
+		<IsRegionItemRequired>0</IsRegionItemRequired>
+	</row>
+	<row>
+		<ID>4442</ID>
+		<RecipeID>3012</RecipeID>
+		<MaterialObjectTypeID>326</MaterialObjectTypeID>
+		<Quality>0</Quality>
+		<Influence>5</Influence>
+		<Quantity>250</Quantity>
+		<IsRegionItemRequired>0</IsRegionItemRequired>
+	</row>
 </table>
