@@ -37470,7 +37470,7 @@
 		<IsPremium>0</IsPremium>
 		<MaxContSize>100000</MaxContSize>
 		<Length>5</Length>
-		<MaxStackSize>0</MaxStackSize>
+		<MaxStackSize>1</MaxStackSize>
 		<UnitWeight>1</UnitWeight>
 		<BackgndImage>art\images\universal</BackgndImage>
 		<FaceImage></FaceImage>
@@ -37508,7 +37508,7 @@
 		<IsPremium>0</IsPremium>
 		<MaxContSize>100000</MaxContSize>
 		<Length>5</Length>
-		<MaxStackSize>0</MaxStackSize>
+		<MaxStackSize>1</MaxStackSize>
 		<UnitWeight>1</UnitWeight>
 		<BackgndImage>art\images\universal</BackgndImage>
 		<FaceImage></FaceImage>
@@ -37546,7 +37546,7 @@
 		<IsPremium>0</IsPremium>
 		<MaxContSize>100000</MaxContSize>
 		<Length>5</Length>
-		<MaxStackSize>0</MaxStackSize>
+		<MaxStackSize>1</MaxStackSize>
 		<UnitWeight>1</UnitWeight>
 		<BackgndImage>art\images\universal</BackgndImage>
 		<FaceImage></FaceImage>
@@ -37584,7 +37584,7 @@
 		<IsPremium>0</IsPremium>
 		<MaxContSize>100000</MaxContSize>
 		<Length>5</Length>
-		<MaxStackSize>0</MaxStackSize>
+		<MaxStackSize>1</MaxStackSize>
 		<UnitWeight>1</UnitWeight>
 		<BackgndImage>art\images\universal</BackgndImage>
 		<FaceImage></FaceImage>
@@ -37622,7 +37622,7 @@
 		<IsPremium>0</IsPremium>
 		<MaxContSize>100000</MaxContSize>
 		<Length>5</Length>
-		<MaxStackSize>0</MaxStackSize>
+		<MaxStackSize>1</MaxStackSize>
 		<UnitWeight>1</UnitWeight>
 		<BackgndImage>art\images\universal</BackgndImage>
 		<FaceImage></FaceImage>
