@@ -37761,44 +37761,4 @@
 		<FaceImage>art\2D\Objects\trader_cart.png</FaceImage>
 		<Description></Description>
 	</row>
-	<!--name = Siege Tower-->
-	<row>
-		<ID>3017</ID>
-		<ParentID>75</ParentID>
-		<Name>Siege Tower</Name>
-		<IsContainer>0</IsContainer>
-		<IsMovableObject>1</IsMovableObject>
-		<IsUnmovableobject>0</IsUnmovableobject>
-		<IsTool>0</IsTool>
-		<IsDevice>0</IsDevice>
-		<IsDoor>1</IsDoor>
-		<IsPremium>0</IsPremium>
-		<MaxContSize>0</MaxContSize>
-		<Length>7</Length>
-		<MaxStackSize>0</MaxStackSize>
-		<UnitWeight>100000</UnitWeight>
-		<BackgndImage>art\images\universal</BackgndImage>
-		<FaceImage>mod\JorvikMod\art\2D\Objects\siegetower.png</FaceImage>
-		<Description>Object from Jorvik MOD</Description>
-	</row>
-	<!--name = Wooden Church-->
-	<row>
-		<ID>3018</ID>
-		<ParentID>72</ParentID>
-		<Name>Wooden Church</Name>
-		<IsContainer>0</IsContainer>
-		<IsMovableObject>0</IsMovableObject>
-		<IsUnmovableobject>1</IsUnmovableobject>
-		<IsTool>0</IsTool>
-		<IsDevice>0</IsDevice>
-		<IsDoor>1</IsDoor>
-		<IsPremium>0</IsPremium>
-		<MaxContSize>0</MaxContSize>
-		<Length>4</Length>
-		<MaxStackSize>0</MaxStackSize>
-		<UnitWeight>2000000</UnitWeight>
-		<BackgndImage></BackgndImage>
-		<FaceImage>mod\JorvikMod\art\2D\Objects\wooden_church.png</FaceImage>
-		<Description>Object from Jorvik MOD pack</Description>
-	</row>
 </table>
