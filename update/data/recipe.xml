@@ -14691,4 +14691,19 @@
 		<IsBlueprint>0</IsBlueprint>
 		<ImagePath>mod\JorvikMod\art\2D\Recipes\siegetower.png</ImagePath>
 	</row>
+	<!--name = Wooden Church-->
+	<row>
+		<ID>3012</ID>
+		<Name>Wooden Church</Name>
+		<Description>Object from Jorvik MOD pack</Description>
+		<StartingToolsID>32</StartingToolsID>
+		<SkillTypeID>20</SkillTypeID>
+		<SkillLvl>60</SkillLvl>
+		<ResultObjectTypeID>3018</ResultObjectTypeID>
+		<SkillDepends>35</SkillDepends>
+		<Quantity>1</Quantity>
+		<Autorepeat>0</Autorepeat>
+		<IsBlueprint>0</IsBlueprint>
+		<ImagePath>mod\JorvikMod\art\2D\Recipes\wooden_church.png</ImagePath>
+	</row>
 </table>
