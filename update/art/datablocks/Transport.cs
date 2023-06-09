@@ -104,9 +104,9 @@ datablock AttachedShapeData(HarnessedHorseWoodCart)
 
 datablock AttachedShapeData(HarnessedSiegeTower)
 {
-	id = 703;
+	id = 702;
 	objectTypeId = 3017;
 	
-	shapeFile = "mod/JorvikMod/art/models/3d/mobiles/transportation/siegetower.dts";
+	shapeFile = "mod/JorvikMod/art/models/3d/mobiles/transportation/siegetower/siegetower.dts";
 };
 //-------------------------------------------------------------------------------------
