@@ -2008,7 +2008,8 @@ INSERT INTO `objects_types` (`ID`, `ParentID`, `Name`, `IsContainer`, `IsMovable
 (3013,196,'Hunter Bow',0,0,0,0,0,0,0,0,3,1,3000,'',0,0,0,0,0,0,'art\\2D\\Items\\hunterbow.png','',20000,NULL,1,1),
 (3014,35,'Mole Pickaxe',0,0,0,1,0,0,0,0,2,1,1500,'',0,0,0,0,0,0,'art\\2D\\Items\\molepickaxe.png','',3000,NULL,1,1),
 (3015,1031,'Witch Sickle',0,0,0,1,0,0,0,0,2,1,1000,'',0,0,0,0,0,0,'art\\2D\\Items\\witchsickle.png','',3100,NULL,1,1),
-(3016,77,'Wood Cart',1,1,0,0,0,0,0,3000000,7,0,10000,'art\\images\\universal',0,0,0,0,0,0,'art\\2D\\Objects\\trader_cart.png','',135600,30,0,0);
+(3016,77,'Wood Cart',1,1,0,0,0,0,0,3000000,7,0,10000,'art\\images\\universal',0,0,0,0,0,0,'art\\2D\\Objects\\trader_cart.png','',135600,30,0,0),
+(3017,75,'Siege Tower',0,1,0,0,0,1,0,0,7,0,100000,'art\\images\\universal',0,0,0,0,0,0,'mod\\JorvikMod\\art\\2D\\Objects\\siegetower.png','Object from Jorvik MOD',135600,30,0,0);
 
 
 
@@ -3166,7 +3167,8 @@ INSERT INTO `recipe` (`ID`, `Name`, `Description`, `StartingToolsID`, `SkillType
 (1143,'Slave (working)','Object from Jorvik MOD',NULL,53,90,2461,50,1,0,0,'mod\\JorvikMod\\art\\2D\\Recipes\\slave.png'),
 (1144,'Wranen the Hunter (stand)','Object from Jorvik MOD',NULL,53,90,2462,50,1,0,0,'mod\\JorvikMod\\art\\2D\\Recipes\\wranen_the_hunter.png'),
 (1145,'test','',293,8,0,1130,10,10,1,0,'art\\2D\\Items\\planks.png'),
-(3010,'Wood Cart','',36,8,90,3016,30,1,0,0,'art\\2D\\Recipes\\horse_cart.png');
+(3010,'Wood Cart','',36,8,90,3016,30,1,0,0,'art\\2D\\Recipes\\horse_cart.png'),
+(3011,'Siege Tower','Object from Jorvik MOD',36,10,0,2467,30,1,0,0,'mod\\JorvikMod\\art\\2D\\Recipes\\siegetower.png');
 
 
 --
@@ -6719,7 +6721,10 @@ INSERT INTO `recipe_requirement` (`ID`, `RecipeID`, `MaterialObjectTypeID`, `Qua
 (4431,3010,255,0,10,4,0),
 (4432,3010,1131,0,10,20,0),
 (4433,3010,36,0,10,40,0),
-(4434,3010,262,0,10,10,0);
+(4434,3010,262,0,10,10,0),
+(4435,3011,1135,0,10,2,0),
+(4436,3011,1134,0,10,1,0),
+(4437,3011,255,0,10,6,0);
 
 
 --

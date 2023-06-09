@@ -31922,4 +31922,32 @@
 		<Quantity>10</Quantity>
 		<IsRegionItemRequired>0</IsRegionItemRequired>
 	</row>
+		<!--Siege Tower-->
+	<row>
+		<ID>4435</ID>
+		<RecipeID>3011</RecipeID>
+		<MaterialObjectTypeID>1135</MaterialObjectTypeID>
+		<Quality>0</Quality>
+		<Influence>10</Influence>
+		<Quantity>2</Quantity>
+		<IsRegionItemRequired>0</IsRegionItemRequired>
+	</row>
+	<row>
+		<ID>4436</ID>
+		<RecipeID>3011</RecipeID>
+		<MaterialObjectTypeID>1134</MaterialObjectTypeID>
+		<Quality>0</Quality>
+		<Influence>10</Influence>
+		<Quantity>1</Quantity>
+		<IsRegionItemRequired>0</IsRegionItemRequired>
+	</row>
+	<row>
+		<ID>4437</ID>
+		<RecipeID>3011</RecipeID>
+		<MaterialObjectTypeID>255</MaterialObjectTypeID>
+		<Quality>0</Quality>
+		<Influence>10</Influence>
+		<Quantity>6</Quantity>
+		<IsRegionItemRequired>0</IsRegionItemRequired>
+	</row>
 </table>
