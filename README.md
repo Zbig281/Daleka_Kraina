@@ -22,7 +22,7 @@ Transfer all content to the server.
 
 you must remove all .cs.dso otherwise the server won't read current .cs
 
-But only those included in the PolankaMOD package
+But only those included in the Daleka_Kraina_MOD package
 
 such as: Animals.cs , Transport.cs and more.
 
