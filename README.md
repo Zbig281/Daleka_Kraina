@@ -1,25 +1,18 @@
 # Daleka_Kraina
 Private Mod for Daleka Kraina Server created by Zbig Brodaty
 
-
 Mod having
-Additional appearance of a horse-drawn wagon with wood beams (creator: Kurai). 
-
-Knoll Mod containing drop for new as well as old mysql version. (You can edit the drop file and add what you want.) Knoll created by (Creator: Kurai).
-
-Jorvik Mod! - No current version available!
-
-Additional weapons taken from the MMO created by (Creator:Zbig bearded).
-
-As well as more. 
-
 - jorvik MOD v.2
 - Knools
 - Knools Weapons, Tools 
-- New horse cart
+- New horse cart (fixed)
 - Knool Spawn random 5 in 1 group
 - All finish for work server. 
 - update folder is for client send basilMod.
+- Knolls dump the bag of items after killing them. It depends on the mysql version. There you can change what should fly out of their bodies.
+Tribeloot_nowewersje.sql<=New version of mysql since v.10.0 if I remember correctly. 
+Tribeloot_starszawersja.sql<=to mysql version 10.0, if I remember correctly. 
+
 
 How to instal?
 
