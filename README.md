@@ -11,9 +11,9 @@ Mod having
 - update folder is for client send basilMod.
 - Knolls dump the bag of items after killing them. It depends on the mysql version. There you can change what should fly out of their bodies.
 
-  Tribeloot_nowewersje.sql<=New version of mysql since v.10.0 if I remember correctly.
+    Tribeloot_nowewersje.sql<=New version of mysql since v.10.0 if I remember correctly.
 
-Tribeloot_starszawersja.sql<=to mysql version 10.0, if I remember correctly. 
+    Tribeloot_starszawersja.sql<=to mysql version 10.0, if I remember correctly. 
 
 
 How to instal?
