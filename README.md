@@ -17,14 +17,25 @@ Tribeloot_starszawersja.sql<=to mysql version 10.0, if I remember correctly.
 How to instal?
 
 Transfer all content to the server.
+
 you must remove all .cs.dso otherwise the server won't read current .cs
+
 But only those included in the PolankaMOD package
+
 such as: Animals.cs , Transport.cs and more.
 
+
 How to create them yourself?
+
 use the command:
+
 "/ANIMAL tribebdata" ,
+
 "/ANIMAL tribedata" ,
+
 "/ANIMAL tribehdata" ,
+
 "/ANIMAL tribemdata" ,
+
 "/ANIMAL tribewdata" .
+
