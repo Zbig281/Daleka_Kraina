@@ -101,6 +101,8 @@ datablock AttachedShapeData(HarnessedHorseWoodCart)
 	
 	shapeFile = "art/models/3d/mobiles/transportation/woodcart/woodhorsecart.dts";
 };
+<<<<<<< HEAD
+=======
 
 datablock AttachedShapeData(HarnessedSiegeTower)
 {
@@ -110,3 +112,4 @@ datablock AttachedShapeData(HarnessedSiegeTower)
 	shapeFile = "mod/JorvikMod/art/models/3d/mobiles/transportation/siegetower/siegetower.dts";
 };
 //-------------------------------------------------------------------------------------
+>>>>>>> 91d7da1b413eeadea164fa4c21922fe7d9e3107e
