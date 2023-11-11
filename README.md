@@ -17,6 +17,7 @@ Mod having
 
 
 How to instal?
+https://youtu.be/LFv7eq21uYg
 
 Transfer all content to the server.
 
