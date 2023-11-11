@@ -43,9 +43,9 @@ else
 {
    exec("scripts/root.cs");
    exec("BasilMod/pack/pack.cs");
-   exec("TTmod/init.cs");
-   exec("Tradepost/init.cs");
-   exec("BasilMod/chats/chats.cs");
-   exec("BasilMod/RestZone/RestZone.cs");
-   exec("ServerRestart/Restart.cs");  
+   //exec("BasilMod/chats/chats.cs"); 			+ guild chat
+   //exec("BasilMod/RestZone/RestZone.cs"); 	RestZone for pvp you need set cordinate for this.
+   //exec("ServerRestart/Restart.cs");  		Auto server restart only for PC server not for host!
+   //exec("TTmod/init.cs");
+   //exec("Tradepost/init.cs");   
 }

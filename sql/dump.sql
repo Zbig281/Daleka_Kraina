@@ -6720,6 +6720,8 @@ INSERT INTO `recipe_requirement` (`ID`, `RecipeID`, `MaterialObjectTypeID`, `Qua
 (4432,3010,1131,0,10,20,0),
 (4433,3010,36,0,10,40,0),
 (4434,3010,262,0,10,10,0);
+
+
 --
 -- Dumping data for table `effects`
 --
