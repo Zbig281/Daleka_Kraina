@@ -16,7 +16,9 @@ Mod having
     Tribeloot_starszawersja.sql<=to mysql version 10.0, if I remember correctly. 
 
 
-How to instal?
+How to instal? 
+
+https://youtu.be/LFv7eq21uYg
 
 Transfer all content to the server.
 
