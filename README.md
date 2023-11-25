@@ -21,7 +21,7 @@ Private mod for Daleka Kraina Server created by Zbig Brodaty
 2. Transfer all content to the server.
 3. Remove all `.cs.dso` files; otherwise, the server won't read the current `.cs`. Only remove those included in the Daleka_Kraina_MOD package, such as `Animals.cs`, `Transport.cs`, and more.
 
-## How to Create Files
+## How to create knool.
 
 Use the following commands:
 
